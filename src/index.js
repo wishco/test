@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+
+  // добавляем к String новый обработчик
+  String.prototype.firstLetterCaps = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  }
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
